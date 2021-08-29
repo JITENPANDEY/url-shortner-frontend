@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
+import baseUrl from '../Services/helper';
 import { UrlService } from '../Services/url.service';
 
 @Component({
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
       this.UrlData = data;
       if(this.UrlData.shortLink!=undefined || this.UrlData.ShortLink!=null) { 
         this.showUrl = true;
-        this.shortenUrl = environment.baseUrl + '/' + this.UrlData.shortLink;
+        this.shortenUrl = baseUrl + '/' + this.UrlData.shortLink;
       }
     },
     (err) => {
