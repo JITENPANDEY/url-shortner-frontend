@@ -1,15 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+body,html {
   background: #f8a434;
   font-family: "Lato", sans-serif;
   color: #fdfcfb;
   text-align: center;
-  height: 50vh;
+  max-height: 50vh;
 }
 
-html,
-body {
-}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;

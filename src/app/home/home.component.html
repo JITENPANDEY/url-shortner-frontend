@@ -15,14 +15,16 @@
       class="button"
       id="url"
       name="url"
-      placeholder="Type your https://your-long-horrible-url/"
+      placeholder="Type your url here..."
       [(ngModel)]="Url.url"
     />
-    <button type="submit" id="submit" class="button">SHORTIFY</button>
+    <button [disabled]="isLoading" type="submit" id="submit" class="button">
+      SHORTIFY
+    </button>
   </div>
   <mat-error
     *ngIf="hasError"
-    style="display: flex; justify-content: space-between"
+    style="display: flex; justify-content: center; margin-top:-0.7rem; font-weight: bold;"
     >Please Enter a valid URL...!</mat-error
   >
   <div class="datepick">
@@ -36,6 +38,9 @@
         type="datetime-local"
         id="dateTime"
         name="dateTime"
+        min="{{min}}"
+        #input
+        (change)="onChange(input.value)"
         [(ngModel)]="Url.expirationDate"
       />
     </div>
@@ -59,3 +64,5 @@
     COPY
   </button>
 </div>
+
+<app-footer></app-footer>

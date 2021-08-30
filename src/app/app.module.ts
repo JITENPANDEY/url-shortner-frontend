@@ -14,8 +14,10 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,10 +31,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
 
   ],
   providers: [],
   bootstrap: [AppComponent],
+  
 })
 export class AppModule {}
