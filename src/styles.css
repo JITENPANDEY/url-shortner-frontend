@@ -4,8 +4,9 @@ body {
     font-family: 'Lato', sans-serif;
     color: #FDFCFB;
     text-align: center;
+    height: 50vh;
   }
   
   
-html, body { height: 100%; }
+html, body { }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

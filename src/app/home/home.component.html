@@ -4,7 +4,7 @@
   </div>
   <div class="description">
     <p>
-      Short your boring long urls with just One Click. The generated link will
+      Short your horrible long urls with just One Click. The generated link will
       be expired after <span style="color: black"> 24Hrs</span> by default.
       However, if you want you can set the expiration limit as per your needs.
     </p>
@@ -15,7 +15,7 @@
       class="button"
       id="url"
       name="url"
-      placeholder="Type your https://your-long-boring-url/"
+      placeholder="Type your https://your-long-horrible-url/"
       [(ngModel)]="Url.url"
     />
     <button type="submit" id="submit" class="button">SHORTIFY</button>
@@ -26,7 +26,7 @@
     >Please Enter a valid URL...!</mat-error
   >
   <div class="datepick">
-    <div>
+    <div class="select">
       <mat-slide-toggle (change)="onToggle($event)">
         Select Expiration Time
       </mat-slide-toggle>
@@ -41,7 +41,7 @@
     </div>
   </div>
 </form>
-<div class="input" id="copy-url" *ngIf="showUrl">
+<div class="input" id="copy-url" *ngIf="true">
   <input
     type="text"
     class="button"

@@ -89,3 +89,52 @@
 .datepick div button{
   font-size: 1.2rem;
 } 
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  form {
+    width: 100%;
+    margin: 17% auto;
+  }
+  .input {
+    display: block;
+  }
+  #copy-url{
+    width: 100%;
+  }
+  #url{
+    margin-bottom: 1rem;
+  }
+  #url, #short-url{
+    width: 90%;
+    font-size:0.8rem;
+    border-radius: 5px 5px;
+    margin-bottom: 1rem;
+  }
+  .datepick{
+    display: block;
+  }
+  .select{
+    margin-bottom: 1rem; 
+  }
+  #dateTime{
+    margin-bottom: 1rem;
+  }
+  .datepick mat-slide-toggle{
+    font-size:0.9rem;
+
+  }
+  #submit{
+    font-size:0.8rem;
+  }
+}
