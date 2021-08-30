@@ -1,6 +1,6 @@
 <form (ngSubmit)="generateShortUrl()">
   <div class="header">
-    <p>Shortify - short your urls</p>
+    <p>Shorttly - short your urls</p>
   </div>
   <div class="description">
     <p>
@@ -41,7 +41,7 @@
     </div>
   </div>
 </form>
-<div class="input" id="copy-url" *ngIf="true">
+<div class="input" id="copy-url" *ngIf="showUrl">
   <input
     type="text"
     class="button"
