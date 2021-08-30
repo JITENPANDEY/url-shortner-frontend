@@ -1,2 +1,2 @@
-let baseUrl = "http://localhost:8090";
+let baseUrl = "https://shortyfi.herokuapp.com";
 export default baseUrl
